@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Dancing Script', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Dancing+Script');
+}
+
+body {
+  font-family: 'Dancing Script',cursive;;
+  display: inline-block;
+  background-color: black;
+}
+
+header, section, footer {
+  animation: animacion 0.9s;
+}
+
+
+header {
+  background-color: #5b7989;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 11px 11px 0px 0px;
+  text-shadow: 2px 1px #02010a;
+  color: white;
+}
+
+li a h2 {
+  text-decoration: underline;
+}
+
+.linkactual h2 {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav a {
+  text-align: center;
+  color: white;
+}
+
+
+li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+img {
+  box-shadow: 2px 2px #02010a;
+}
+
+section{
+  background-color: #82c3a6;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 200px;
+}
+
+#central {
+  width:275px;
+  height: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section2 {
+  background-color: #d5c75f;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 440px;
+  display: inline-block;
+}
+
+#sydney {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 275px;
+  height: 200px;
+}
+
+#sydney:hover {
+  transform: rotate(10deg);
+  /*sirce para toar el elemnto cuando
+  el puntero esta sobre el elemento*/
+  border: 2px;
+  box-shadow: 5px 5px 5px 0px #82c3a6;
+}
+
+#melbourne {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 275px;
+  height: 200px;
+}
+
+#melbourne:hover {
+  transform: translate(20px,-5px);
+  /*sirve para traslaadar
+  un elemnto en el eje x y y, en este cuando se pone el puntero
+  encima del elemento*/
+  box-shadow: 5px 5px 5px 0px #82c3a6;
+  border: 2px;
+}
+
+#paisaje {
+  display: inline-table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 12%;
+  margin-right: auto;
+  width: 275px;
+  height: 200px;
+}
+
+
+.footer1 {
+  background-color: #C6d5c5;
+  width: 100%;
+  position: absolute;
+  top: 900px;
+  left: 0%;
+  text-align: center;
+  border-radius: 0px 0px 11px 11px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: black;
+}
+
+.footer2 {
+  background-color: #C6d5c5;
+  width: 100%;
+  position: absolute;
+  top: 1660px;
+  left: 0%;
+  text-align: center;
+  border-radius: 0px 0px 11px 11px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: black;
+}
+
+
+.section3 {
+  background-color: #d5c75f;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 440px;
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+}
+
+.contacto, .terminos, .redes_sociales, .derechos {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.img1 {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.img2, .img4, .img6 {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%)
+}
+
+.img3 {
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+
+@keyframes animacion {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 900px)  {
+
+  li a {
+    float: right;
+    display: inline;
+  }
+
+  nav h2 {
+    float: left;
+    display: inline;
+    margin-left: 20px;
+    padding-right: 5px;
+  }
+
+  .linkactual h2 {
+    text-decoration: none;
+  }
+
+  .section1 {
+    position: absolute;
+    top: 80px
+  }
+
+  .section2 {
+    position: absolute;
+    top: 320px;
+  }
+
+  .section3 {
+    position: absolute;
+    top: 70px;
+  }
+
+  footer {
+    position: absolute;
+    top:800px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row wrap;
+    padding-right: 5%;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: row wrap;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .footer1 {
+    top:600px;
+  }
+
+  .footer2 {
+    top: 800px;
+  }
+  .linkactual h2 {
+    text-decoration: none;
+  }
+
+}
